@@ -4,7 +4,7 @@ Kotlin + Ktor based [Jsoup](https://jsoup.org/) integration plugin for parsing H
 
 **Reference / Inspired by:** [T-Fowl/ktor-jsoup](https://github.com/T-Fowl/ktor-jsoup)
 
-[![](https://jitpack.io/v/mrjimin/Keis.svg)](https://jitpack.io/#mrjimin/Ksoup)
+[![](https://jitpack.io/v/mrjimin/Ksoup.svg)](https://jitpack.io/#mrjimin/Ksoup)
 [![GitHub License](https://img.shields.io/github/license/mrjimin/Ksoup?style=flat-square)](LICENSE)
 [![Kotlin](https://img.shields.io/badge/kotlin-2.3.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Ktor](https://img.shields.io/badge/ktor-3.4.1-087CFA.svg?logo=ktor)](https://ktor.io/)
