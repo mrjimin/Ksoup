@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.mrjimin:Ksoup:1.0.0")
+    implementation("com.github.mrjimin:Ksoup:1.0.1")
 }
 ```
 

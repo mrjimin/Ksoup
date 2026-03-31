@@ -4,10 +4,10 @@ plugins {
 }
 
 group = "com.github.mrjimin.ksoup"
-version = "1.0.0"
+version = "1.0.1"
 
 application {
-    mainClass = "com.github.mrjimin.ksoup.test.MainKt"
+    mainClass = "com.github.mrjimin.ksoup.MainKt"
 }
 
 repositories {
