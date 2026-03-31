@@ -28,24 +28,24 @@ val KsoupPlugin = createClientPlugin("KsoupPlugin", ::KsoupPluginConfig) {
 
 class KsoupPluginConfig {
 
-    internal val parsers = mutableMapOf(
+    internal val parsers: MutableMap<ContentType, Parser> = listOf(
         ContentType.Text.Html to Parser.htmlParser(),
         ContentType.Text.Xml to Parser.xmlParser(),
         ContentType.Application.Xml to Parser.xmlParser()
-    )
+    ).toMap().toMutableMap()
 
     internal var defaultParser: Parser? = null
 
-    fun parseAsHtml(contentType: ContentType) {
-        parsers[contentType] = Parser.htmlParser()
-    }
-
-    fun parseAsXml(contentType: ContentType) {
-        parsers[contentType] = Parser.xmlParser()
-    }
-
     fun parseAs(contentType: ContentType, parser: Parser) {
         parsers[contentType] = parser
+    }
+
+    fun parseAsHtml(vararg contentTypes: ContentType) {
+        contentTypes.forEach { parseAs(it, Parser.htmlParser()) }
+    }
+
+    fun parseAsXml(vararg contentTypes: ContentType) {
+        contentTypes.forEach { parseAs(it, Parser.xmlParser()) }
     }
 
     fun setDefaultParser(parser: Parser) {
