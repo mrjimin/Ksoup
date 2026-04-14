@@ -15,9 +15,9 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.ktor.client.core)
+    api(libs.ktor.client.core)
     implementation(libs.ktor.client.cio)
-    implementation(libs.jsoup)
+    api(libs.jsoup)
     implementation(libs.logback.classic)
 
     testImplementation(kotlin("test"))
