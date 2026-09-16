@@ -1,14 +1,10 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
-    alias(libs.plugins.ktor)
+    id("org.jetbrains.dokka") version "2.3.0-Beta"
 }
 
 group = "com.github.mrjimin.ksoup"
-version = "1.0.1"
-
-application {
-    mainClass = "com.github.mrjimin.ksoup.MainKt"
-}
+version = "1.0.2"
 
 repositories {
     mavenCentral()
